@@ -6,79 +6,82 @@
   <title>Sriram Venugopal</title>
   <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body class="container mx-auto bg-gray-900 font-custom text-gray-100">
   <div><!-- Content Wrapper-->
     <div>
-      <nav>
-        <div>
+      <nav class="flex justify-between">
+        <div class="flex my-12">
           <h1>
-            <a href="/">Sriram.</a> 
+            <a href="/" class=" text-2xl text-white font-custom font-bold">Sriram.</a> 
           </h1>
         </div>
-
-        <ul>
-          <li>
-            <a href="#">
-              <span>Work</span>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <span>Side Projects</span>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <span>About</span>
-            </a>
-          </li>
-        </ul>
+        <div>
+          <ul class="flex my-12 text-lg">
+            <li>
+              <a href="#">
+                <span class="mx-4">Work</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="mx-4">Side Projects</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span class="mx-4">About</span>
+              </a>
+            </li>
+          </ul>
+        </div>
       </nav>
     </div> <!-- end of nav-->
 
     <main>
-      <div>
-        <header>
-          <h2>👋 Hello! I'm Sriram Venugopal.</h2>
-          <h5>I'm a UX Designer based out of Chennai, India.</h5>
-          <p>Currently @ <a href="#">Tata Consultancy Services</a></p>
-
-        <!-- contact me-->
-        <ul>
-          <li>
-            <a href="#">
-              <span>Email</span>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <span>Twitter</span>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <span>LinkedIn</span>
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <span>Instagram</span>
-            </a>
-          </li>
-        </ul>
+      <div class=" container mx-auto">
+        <header class="flex justify-center">
+          <div class="mt-40 mb-6 text-center">
+            <div class="flex">
+              <img src="img/wave.png" alt="hello" class="mx-4 my-auto w-12 h-12">
+              <h2 class="py-2 text-5xl text-gray-50 font-bold">Hello! I'm Sriram Venugopal.</h2>
+            </div>
+            <h5 class="py-2 text-xl text-gray-400 font-normal">I'm a UX Designer based out of Chennai, India.</h5>
+            <p class="py-2 text-lg text-gray-400 font-normal">Currently @ <a href="#" class="font-bold text-indigo-500 hover:text-indigo-600">Tata Consultancy Services</a></p>
+          </div>
         </header>
+          
+      <div class="flex justify-center mb-32">
+        <!-- contact me-->
+        <a href="https://twitter.com/designersriram">
+          <img src="img/icon-twitter.svg" class=" h-8 w-8 mx-6" alt="Twitter Icon">
+        </a>
+      
+        <a href="https://instagram.com/sriram015">
+          <img src="img/icon-instagram.svg" class=" h-8 w-8 mx-6" alt="Instagram Icon">
+        </a>
+      
+        <a href="https://www.linkedin.com/in/sriramvenugopal">
+          <img src="img/icon-linkedin.svg" class=" h-8 w-8 mx-6" alt="LinkedIn Icon">
+        </a>
+      </div>
+        
 
-        <div>
-          <h3>Case Studies</h3>
-          <div></div>
+        <div class="max-w-4xl mx-auto">
+          <h3 class=" py-2 text-2xl text-gray-400 font-bold">Case Studies</h3>
+          <div class=" mb-6 border-b border-gray-600"></div>
 
-          <div>
+          <div class=" max-w-4xl grid grid-cols-3 gap-4 bg-gray-800 px-4 py-4 rounded-2xl mx-auto">
             <!--case study cards go here-->
-            <img src="img/cs1_dp.png" alt="Display pic of the learning hub">
-            <div>
-              <span>The Learning Hub</span>
-              <span>Design overhaul of a legacy website into a hybrid mobile app that provides a platform for students 
-                to collaborate, learn and manage all college-related activities.</span>
+            <div class="h-60 w-60">
+              <img src="img/dp_cs1.png" alt="Display pic of the learning hub" class=" rounded-2xl">
+            </div>
+      
+            <div class=" col-span-2 px-2">
+              <h4 class="text-2xl text-gray-50 font-bold pb-2">The Learning Hub</h4>
+              <p class="py-2 text-base text-gray-400 leading-normal whitespace-normal">
+                Design overhaul of a legacy website into a hybrid mobile app that provides a platform for students 
+                to collaborate, learn and manage all college-related activities.
+              </p>
             </div>
           </div>
         </div>
