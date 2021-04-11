@@ -1,0 +1,23 @@
+{
+  "name": "portfolio-2021",
+  "version": "1.0.0",
+  "description": "A designer's attempt to build his portfolio by learning to code from scratch.",
+  "main": "index.js",
+  "scripts": {
+    "build-tailwind-css": "tailwindcss build src/styles.css -o public/styles.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sridesigns/portfolio-2021.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sridesigns/portfolio-2021/issues"
+  },
+  "homepage": "https://github.com/sridesigns/portfolio-2021#readme",
+  "dependencies": {
+    "tailwindcss": "^2.1.1"
+  }
+}
