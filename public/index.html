@@ -1,4 +1,5 @@
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -6,17 +7,27 @@
   <title>Sriram Venugopal</title>
   <link rel="stylesheet" href="styles.css">
 </head>
-<body class="container mx-auto bg-gray-900 font-custom text-gray-100">
-  <div><!-- Content Wrapper-->
+
+<body class=" bg-gray-100 dark:bg-gray-800 font-custom text-gray-800 dark:text-gray-100 ">
+  <div>
+    <!-- Content Wrapper-->
     <div>
-      <nav class="flex justify-between">
-        <div class="flex my-12">
-          <h1>
-            <a href="/" class=" text-2xl text-white font-custom font-bold">Sriram.</a> 
-          </h1>
+      <nav class=" container mx-auto flex justify-between">
+        <div class="flex items-center">
+          <div class="my-8">
+            <h1>
+              <a href="/" class=" text-2xl text-black dark:text-white font-custom font-bold">Sriram.</a>
+            </h1>
+          </div>
+          <div class="m-8 cursor-pointer hover:bg-gray-600 rounded-2xl md:hidden">
+            <svg class="w-8 h-8 p-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8h16M4 16h16"></path>
+            </svg>
+          </div>
         </div>
         <div>
-          <ul class="flex my-12 text-lg">
+          <ul class="flex my-8 text-lg">
             <li>
               <a href="#">
                 <span class="mx-4">Work</span>
@@ -37,51 +48,53 @@
       </nav>
     </div> <!-- end of nav-->
 
-    <main>
+    <main class=" bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-gray-50">
       <div class=" container mx-auto">
         <header class="flex justify-center">
           <div class="mt-40 mb-6 text-center">
             <div class="flex">
               <img src="img/wave.png" alt="hello" class="mx-4 my-auto w-12 h-12">
-              <h2 class="py-2 text-5xl text-gray-50 font-bold">Hello! I'm Sriram Venugopal.</h2>
+              <h2 class="py-2 text-5xl text-gray-900 dark:text-gray-50 font-bold">Hello! I'm Sriram Venugopal.</h2>
             </div>
-            <h5 class="py-2 text-xl text-gray-400 font-normal">I'm a UX Designer based out of Chennai, India.</h5>
-            <p class="py-2 text-lg text-gray-400 font-normal">Currently @ <a href="#" class="font-bold text-indigo-500 hover:text-indigo-600">Tata Consultancy Services</a></p>
+            <h5 class="py-2 text-xl text-gray-600 dark:text-gray-400 font-normal">I'm a UX Designer based out of
+              Chennai, India.</h5>
+            <p class="py-2 text-lg text-gray-600 dark:text-gray-400 font-normal">Currently @ <a href="#"
+                class="font-bold text-indigo-500 hover:text-indigo-600">Tata Consultancy Services</a></p>
           </div>
         </header>
-          
-      <div class="flex justify-center mb-32">
-        <!-- contact me-->
-        <a href="https://twitter.com/designersriram">
-          <img src="img/icon-twitter.svg" class=" h-8 w-8 mx-6" alt="Twitter Icon">
-        </a>
-      
-        <a href="https://instagram.com/sriram015">
-          <img src="img/icon-instagram.svg" class=" h-8 w-8 mx-6" alt="Instagram Icon">
-        </a>
-      
-        <a href="https://www.linkedin.com/in/sriramvenugopal">
-          <img src="img/icon-linkedin.svg" class=" h-8 w-8 mx-6" alt="LinkedIn Icon">
-        </a>
-      </div>
-        
+
+        <div class="flex justify-center mb-32">
+          <!-- contact me-->
+          <a href="https://twitter.com/designersriram">
+            <img src="img/icon-twitter.svg" class=" h-8 w-8 mx-6" alt="Twitter Icon" fill="currentColor">
+          </a>
+
+          <a href="https://instagram.com/sriram015">
+            <img src="img/icon-instagram.svg" class=" h-8 w-8 mx-6" alt="Instagram Icon" fill="currentColor">
+          </a>
+
+          <a href="https://www.linkedin.com/in/sriramvenugopal">
+            <img src="img/icon-linkedin.svg" class=" h-8 w-8 mx-6" alt="LinkedIn Icon" fill="currentColor">
+          </a>
+        </div>
+
 
         <div class="max-w-4xl mx-auto">
-          <h3 class=" py-2 text-2xl text-gray-400 font-bold">Case Studies</h3>
-          <div class=" mb-6 border-b border-gray-600"></div>
+          <h3 class=" py-2 text-2xl text-gray-700 dark:text-gray-400 font-bold">Case Studies</h3>
+          <div class=" mb-6 border-b border-gray-300 dark:border-gray-600"></div>
 
-          <div class=" max-w-4xl grid grid-cols-3 gap-4 bg-gray-800 px-4 py-4 rounded-2xl mx-auto">
+          <div class=" lg:max-w-4xl md:max-w-xl grid grid-cols-3 gap-4  mx-auto">
             <!--case study cards go here-->
-            <div class="h-60 w-60">
-              <img src="img/dp_cs1.png" alt="Display pic of the learning hub" class=" rounded-2xl">
+            <div class="h-full w-full object-cover rounded-2xl overflow-hidden">
+              <img src="img/dp_cs1.png" alt="Display pic of the learning hub" class="">
             </div>
-      
+
             <div class=" col-span-2 px-2">
-              <h4 class="text-2xl text-gray-50 font-bold pb-2">The Learning Hub</h4>
-              <p class="py-2 text-base text-gray-400 leading-normal whitespace-normal">
-                Design overhaul of a legacy website into a hybrid mobile app that provides a platform for students 
+              <h4 class="text-2xl text-gray-900 dark:text-gray-50 font-bold pt-4 pb-2">The Learning Hub</h4>
+              <span class="pb-2 text-lg text-gray-600 dark:text-gray-400 leading-normal whitespace-normal block">
+                Design overhaul of a legacy website into a hybrid mobile app that provides a platform for students
                 to collaborate, learn and manage all college-related activities.
-              </p>
+              </span>
             </div>
           </div>
         </div>
@@ -91,4 +104,5 @@
     </main>
   </div>
 </body>
+
 </html>
