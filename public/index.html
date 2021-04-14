@@ -8,48 +8,45 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class=" bg-gray-100 dark:bg-gray-800 font-custom text-gray-800 dark:text-gray-100 ">
+<body class=" bg-gray-100 dark:bg-gray-900 font-custom text-gray-800 dark:text-gray-100 ">
   <div>
     <!-- Content Wrapper-->
-    <div>
-      <nav class=" container mx-auto flex justify-between">
-        <div class="flex items-center">
-          <div class="my-8">
-            <h1>
-              <a href="/" class=" text-2xl text-black dark:text-white font-custom font-bold">Sriram.</a>
-            </h1>
-          </div>
-          <div class="m-8 cursor-pointer hover:bg-gray-600 rounded-2xl md:hidden">
+    <div class=" md:border-b border-gray-200 dark:border-gray-800">
+      <!-- Nav Wrapper-->
+      <nav class="md:flex md:container justify-between items-center">
+        <div class="container flex justify-between items-center my-6">
+          <h1>
+            <a href="/" class="text-2xl text-gray-900 dark:text-gray-50 font-custom font-bold px-6">Sriram.</a>
+          </h1>
+          <div class=" px-6 cursor-pointer md:hidden" id="burger">
             <svg class="w-8 h-8 p-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8h16M4 16h16"></path>
-            </svg>
           </div>
         </div>
-        <div>
-          <ul class="flex my-8 text-lg">
-            <li>
-              <a href="#">
-                <span class="mx-4">Work</span>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <span class="mx-4">Side Projects</span>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <span class="mx-4">About</span>
-              </a>
-            </li>
-          </ul>
-        </div>
+        <ul class="hidden md:flex border-b md:border-none border-gray-200 dark:border-gray-700 items-center" id="menu">
+          <li class="my-5">
+            <a href="#" class="navlinks">
+              <span>Work</span>
+            </a>
+          </li>
+          <li class="my-5">
+            <a href="#" class="navlinks">
+              <span>Side Projects</span>
+            </a>
+          </li>
+          <li class="my-5">
+            <a href="#" class="navlinks">
+              <span>About</span>
+            </a>
+          </li>
+        </ul>
       </nav>
-    </div> <!-- end of nav-->
+    </div>
+    <!-- End of Nav Wrapper-->
 
     <main class=" bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-gray-50">
-      <div class=" container mx-auto">
+      <section class=" container mx-auto">
         <header class="flex justify-center">
           <div class="mt-40 mb-6 text-center">
             <div class="flex">
@@ -77,13 +74,16 @@
             <img src="img/icon-linkedin.svg" class=" h-8 w-8 mx-6" alt="LinkedIn Icon" fill="currentColor">
           </a>
         </div>
+      </section>
 
+      <section id="work" class="container">
+        <div>
+          <div class=" max-w-xl md:max-w-2xl lg:max-w-4xl mx-6 md:mx-auto ">
+            <h3 class=" py-2 text-2xl text-gray-700 dark:text-gray-400 font-bold">Case Studies</h3>
+            <div class=" mb-6 border-b border-gray-300 dark:border-gray-600"></div>
+          </div>
 
-        <div class="max-w-4xl mx-auto">
-          <h3 class=" py-2 text-2xl text-gray-700 dark:text-gray-400 font-bold">Case Studies</h3>
-          <div class=" mb-6 border-b border-gray-300 dark:border-gray-600"></div>
-
-          <div class=" lg:max-w-4xl md:max-w-xl grid grid-cols-3 gap-4  mx-auto">
+          <div class=" max-w-xl md:max-w-2xl lg:max-w-4xl grid  grid-cols-1 md:grid-cols-3 gap-4 mx-6 md:mx-auto">
             <!--case study cards go here-->
             <div class="h-full w-full object-cover rounded-2xl overflow-hidden">
               <img src="img/dp_cs1.png" alt="Display pic of the learning hub" class="">
@@ -99,10 +99,12 @@
           </div>
         </div>
 
-      </div>
+      </section>
 
     </main>
   </div>
+
+  <script src="index.js"></script>
 </body>
 
 </html>
