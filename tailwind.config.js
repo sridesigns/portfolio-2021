@@ -15,13 +15,17 @@ module.exports = {
       },
 
       fontFamily: {
-        'custom': ['Soleil', 'Objectivity', 'system-ui'],
+        'custom': ['Poppins', 'Soleil', 'system-ui'],
       },
 
     },
   },
   variants: {
-    extend: {},
+    extend: {
+      backgroundColor: ['active'],
+      animation: ['hover', 'focus'],
+
+    },
   },
   plugins: [],
 }

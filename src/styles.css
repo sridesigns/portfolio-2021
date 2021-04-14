@@ -1,4 +1,7 @@
 /* Custom Font Integrations */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+
 /* Soleil Font*/
 @font-face {
   font-family: 'Soleil';
@@ -35,119 +38,28 @@
   font-style: normal;
 }
 
-/* Objectivity Fonts
+
 @font-face {
   font-family: 'Objectivity';
   src: url('font/objectivity/objectivity-black-webfont.woff2') format('woff2'),
        url('font/objectivity/objectivity-black-webfont.woff') format('woff');
   font-weight: 900;
-  font-style: heavy;
+  font-style: black;
 
 }
-
-@font-face {
-  font-family: 'Objectivity';
-  src: url('font/objectivity/objectivity-blackslanted-webfont.woff2') format('woff2'),
-       url('font/objectivity/objectivity-blackslanted-webfont.woff') format('woff');
-  font-weight: 900;
-  font-style: heavy-italic;
-
-}
-
-@font-face {
-  font-family: 'Objectivity';
-  src: url('font/objectivity/objectivity-bold-webfont.woff2') format('woff2'),
-       url('font/objectivity/objectivity-bold-webfont.woff') format('woff');
-  font-weight: 700;
-  font-style: bold;
-
-}
-
-@font-face {
-  font-family: 'Objectivity';
-  src: url('font/objectivity/objectivity-boldslanted-webfont.woff2') format('woff2'),
-       url('font/objectivity/bjectivity-boldslanted-webfont.woff') format('woff');
-  font-weight: 700;
-  font-style: bold-italic;
-
-}
-
-@font-face {
-  font-family: 'Objectivity';
-  src: url('font/objectivity/objectivity-extrabold-webfont.woff2') format('woff2'),
-       url('font/objectivity/objectivity-extrabold-webfont.woff') format('woff');
-  font-weight: 800;
-  font-style: extrabold;
-
-}
-
-@font-face {
-  font-family: 'Objectivity';
-  src: url('font/objectivity/objectivity-extraboldslanted-webfont.woff2') format('woff2'),
-       url('font/objectivity/objectivity-extraboldslanted-webfont.woff') format('woff');
-  font-weight: 800;
-  font-style: extrabold-italic;
-
-}
-
-@font-face {
-  font-family: 'Objectivity';
-  src: url('font/objectivity/objectivity-light-webfont.woff2') format('woff2'),
-       url('font/objectivity/objectivity-light-webfont.woff') format('woff');
-  font-weight: 300;
-  font-style: light;
-
-}
-
-@font-face {
-  font-family: 'Objectivity';
-  src: url('font/objectivity/objectivity-lightslanted-webfont.woff2') format('woff2'),
-       url('font/objectivity/objectivity-lightslanted-webfont.woff') format('woff');
-  font-weight: 300;
-  font-style: light-italic;
-
-}
-
-@font-face {
-  font-family: 'Objectivity';
-  src: url('font/objectivity/objectivity-medium-webfont.woff2') format('woff2'),
-       url('font/objectivity/objectivity-medium-webfont.woff') format('woff');
-  font-weight: 500;
-  font-style: medium;
-
-}
-
-@font-face {
-  font-family: 'Objectivity';
-  src: url('font/objectivity/objectivity-mediumslanted-webfont.woff2') format('woff2'),
-       url('font/objectivity/objectivity-mediumslanted-webfont.woff') format('woff');
-  font-weight: 500;
-  font-style: medium-italic;
-
-}
-
-@font-face {
-  font-family: 'Objectivity';
-  src: url('font/objectivity/objectivity-regular-webfont.woff2') format('woff2'),
-       url('font/objectivity/objectivity-regular-webfont.woff') format('woff');
-  font-weight: 400;
-  font-style: regular;
-
-}
-
-@font-face {
-  font-family: 'Objectivity';
-  src: url('font/objectivity/objectivity-regularslanted-webfont.woff2') format('woff2'),
-       url('font/objectivity/objectivity-regularslanted-webfont.woff') format('woff');
-  font-weight: 400;
-  font-style: italic;
-}
-*/
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 .navlinks {
-  @apply container text-base md:text-lg text-gray-800 dark:text-gray-100 px-6 py-6;
+  @apply container text-base md:text-lg text-gray-800 dark:text-gray-100 mx-6 my-6;
+}
+
+.selected {
+  @apply md:border-b md:border-green-500 text-green-500 mx-6 py-6 text-base md:text-lg;
+}
+
+.navlist {
+  @apply border-b md:border-none border-gray-200 dark:border-gray-700 md:space-x-6;
 }

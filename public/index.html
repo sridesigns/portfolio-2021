@@ -13,30 +13,35 @@
     <!-- Content Wrapper-->
     <div class=" md:border-b border-gray-200 dark:border-gray-800">
       <!-- Nav Wrapper-->
-      <nav class="md:flex md:container justify-between items-center">
-        <div class="container flex justify-between items-center my-6">
+      <nav class=" md:container md:flex justify-between items-center">
+        <div class="flex justify-between items-center my-6">
           <h1>
             <a href="/" class="text-2xl text-gray-900 dark:text-gray-50 font-custom font-bold px-6">Sriram.</a>
           </h1>
-          <div class=" px-6 cursor-pointer md:hidden" id="burger">
-            <svg class="w-8 h-8 p-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+          <button class=" cursor-pointer md:hidden hover:bg-gray-800 rounded-full mx-6 " id="burger">
+            <svg class=" hover:animate-bounce w-8 h-8 p-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"
               xmlns="http://www.w3.org/2000/svg">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8h16M4 16h16"></path>
-          </div>
+          </button>
         </div>
-        <ul class="hidden md:flex border-b md:border-none border-gray-200 dark:border-gray-700 items-center" id="menu">
+        <ul class="navlist hidden md:flex justify-evenly" id="menu">
+          <li class="my-5">
+            <a href="index.html" class="navlinks">
+              <span>Home</span>
+            </a>
+          </li>
           <li class="my-5">
             <a href="#" class="navlinks">
               <span>Work</span>
             </a>
           </li>
           <li class="my-5">
-            <a href="#" class="navlinks">
+            <a href="sideprojects.html" class="navlinks">
               <span>Side Projects</span>
             </a>
           </li>
           <li class="my-5">
-            <a href="#" class="navlinks">
+            <a href="about.html" class="navlinks">
               <span>About</span>
             </a>
           </li>
@@ -56,14 +61,14 @@
             <h5 class="py-2 text-xl text-gray-600 dark:text-gray-400 font-normal">I'm a UX Designer based out of
               Chennai, India.</h5>
             <p class="py-2 text-lg text-gray-600 dark:text-gray-400 font-normal">Currently @ <a href="#"
-                class="font-bold text-indigo-500 hover:text-indigo-600">Tata Consultancy Services</a></p>
+                class="font-bold text-green-500 hover:text-green-600">Tata Consultancy Services</a></p>
           </div>
         </header>
 
         <div class="flex justify-center mb-32">
           <!-- contact me-->
           <a href="https://twitter.com/designersriram">
-            <img src="img/icon-twitter.svg" class=" h-8 w-8 mx-6" alt="Twitter Icon" fill="currentColor">
+            <img src="img/icon-twitter.svg" class=" h-8 w-8 mx-6 " alt="Twitter Icon" fill="currentColor">
           </a>
 
           <a href="https://instagram.com/sriram015">
